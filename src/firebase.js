@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, RecaptchaVerifier } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyALE7v9Wt6_Do4kSUjZ_kr29abwwif2_ws",
+    apiKey: "my_api_key",
     authDomain: "mfrs-a815c.firebaseapp.com",
     projectId: "mfrs-a815c",
     storageBucket: "mfrs-a815c.firebasestorage.app",
