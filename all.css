@@ -1,0 +1,235 @@
+/* MFRS.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.MFRS-serif{font-family:serif}.MFRS-sans-serif{font-family:sans-serif}.MFRS-cursive{font-family:cursive}.MFRS-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.MFRS-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.MFRS-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.MFRS-table,.MFRS-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.MFRS-table-all{border:1px solid #ccc}
+.MFRS-bordered tr,.MFRS-table-all tr{border-bottom:1px solid #ddd}.MFRS-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.MFRS-table-all tr:nth-child(odd){background-color:#fff}.MFRS-table-all tr:nth-child(even){background-color:#f1f1f1}
+.MFRS-hoverable tbody tr:hover,.MFRS-ul.MFRS-hoverable li:hover{background-color:#ccc}.MFRS-centered tr th,.MFRS-centered tr td{text-align:center}
+.MFRS-table td,.MFRS-table th,.MFRS-table-all td,.MFRS-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.MFRS-table th:first-child,.MFRS-table td:first-child,.MFRS-table-all th:first-child,.MFRS-table-all td:first-child{padding-left:16px}
+.MFRS-btn,.MFRS-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.MFRS-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.MFRS-btn,.MFRS-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.MFRS-disabled,.MFRS-btn:disabled,.MFRS-button:disabled{cursor:not-allowed;opacity:0.3}.MFRS-disabled *,:disabled *{pointer-events:none}
+.MFRS-btn.MFRS-disabled:hover,.MFRS-btn:disabled:hover{box-shadow:none}
+.MFRS-badge,.MFRS-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.MFRS-badge{border-radius:50%}
+.MFRS-ul{list-style-type:none;padding:0;margin:0}.MFRS-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.MFRS-ul li:last-child{border-bottom:none}
+.MFRS-tooltip,.MFRS-display-container{position:relative}.MFRS-tooltip .MFRS-text{display:none}.MFRS-tooltip:hover .MFRS-text{display:inline-block}
+.MFRS-ripple:active{opacity:0.5}.MFRS-ripple{transition:opacity 0s}
+.MFRS-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.MFRS-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.MFRS-dropdown-click,.MFRS-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.MFRS-dropdown-hover:hover .MFRS-dropdown-content{display:block}
+.MFRS-dropdown-hover:first-child,.MFRS-dropdown-click:hover{background-color:#ccc;color:#000}
+.MFRS-dropdown-hover:hover > .MFRS-button:first-child,.MFRS-dropdown-click:hover > .MFRS-button:first-child{background-color:#ccc;color:#000}
+.MFRS-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.MFRS-check,.MFRS-radio{width:24px;height:24px;position:relative;top:6px}
+.MFRS-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.MFRS-bar-block .MFRS-dropdown-hover,.MFRS-bar-block .MFRS-dropdown-click{width:100%}
+.MFRS-bar-block .MFRS-dropdown-hover .MFRS-dropdown-content,.MFRS-bar-block .MFRS-dropdown-click .MFRS-dropdown-content{min-width:100%}
+.MFRS-bar-block .MFRS-dropdown-hover .MFRS-button,.MFRS-bar-block .MFRS-dropdown-click .MFRS-button{width:100%;text-align:left;padding:8px 16px}
+.MFRS-main,#main{transition:margin-left .4s}
+.MFRS-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.MFRS-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.MFRS-bar{width:100%;overflow:hidden}.MFRS-center .MFRS-bar{display:inline-block;width:auto}
+.MFRS-bar .MFRS-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.MFRS-bar .MFRS-dropdown-hover,.MFRS-bar .MFRS-dropdown-click{position:static;float:left}
+.MFRS-bar .MFRS-button{white-space:normal}
+.MFRS-bar-block .MFRS-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.MFRS-bar-block.MFRS-center .MFRS-bar-item{text-align:center}.MFRS-block{display:block;width:100%}
+.MFRS-responsive{display:block;overflow-x:auto}
+.MFRS-container:after,.MFRS-container:before,.MFRS-panel:after,.MFRS-panel:before,.MFRS-row:after,.MFRS-row:before,.MFRS-row-padding:after,.MFRS-row-padding:before,
+.MFRS-cell-row:before,.MFRS-cell-row:after,.MFRS-clear:after,.MFRS-clear:before,.MFRS-bar:before,.MFRS-bar:after{content:"";display:table;clear:both}
+.MFRS-col,.MFRS-half,.MFRS-third,.MFRS-twothird,.MFRS-threequarter,.MFRS-quarter{float:left;width:100%}
+.MFRS-col.s1{width:8.33333%}.MFRS-col.s2{width:16.66666%}.MFRS-col.s3{width:24.99999%}.MFRS-col.s4{width:33.33333%}
+.MFRS-col.s5{width:41.66666%}.MFRS-col.s6{width:49.99999%}.MFRS-col.s7{width:58.33333%}.MFRS-col.s8{width:66.66666%}
+.MFRS-col.s9{width:74.99999%}.MFRS-col.s10{width:83.33333%}.MFRS-col.s11{width:91.66666%}.MFRS-col.s12{width:99.99999%}
+@media (min-width:601px){.MFRS-col.m1{width:8.33333%}.MFRS-col.m2{width:16.66666%}.MFRS-col.m3,.MFRS-quarter{width:24.99999%}.MFRS-col.m4,.MFRS-third{width:33.33333%}
+.MFRS-col.m5{width:41.66666%}.MFRS-col.m6,.MFRS-half{width:49.99999%}.MFRS-col.m7{width:58.33333%}.MFRS-col.m8,.MFRS-twothird{width:66.66666%}
+.MFRS-col.m9,.MFRS-threequarter{width:74.99999%}.MFRS-col.m10{width:83.33333%}.MFRS-col.m11{width:91.66666%}.MFRS-col.m12{width:99.99999%}}
+@media (min-width:993px){.MFRS-col.l1{width:8.33333%}.MFRS-col.l2{width:16.66666%}.MFRS-col.l3{width:24.99999%}.MFRS-col.l4{width:33.33333%}
+.MFRS-col.l5{width:41.66666%}.MFRS-col.l6{width:49.99999%}.MFRS-col.l7{width:58.33333%}.MFRS-col.l8{width:66.66666%}
+.MFRS-col.l9{width:74.99999%}.MFRS-col.l10{width:83.33333%}.MFRS-col.l11{width:91.66666%}.MFRS-col.l12{width:99.99999%}}
+.MFRS-rest{overflow:hidden}.MFRS-stretch{margin-left:-16px;margin-right:-16px}
+.MFRS-content,.MFRS-auto{margin-left:auto;margin-right:auto}.MFRS-content{max-width:980px}.MFRS-auto{max-width:1140px}
+.MFRS-cell-row{display:table;width:100%}.MFRS-cell{display:table-cell}
+.MFRS-cell-top{vertical-align:top}.MFRS-cell-middle{vertical-align:middle}.MFRS-cell-bottom{vertical-align:bottom}
+.MFRS-hide{display:none!important}.MFRS-show-block,.MFRS-show{display:block!important}.MFRS-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.MFRS-auto{max-width:95%}}
+@media (max-width:600px){.MFRS-modal-content{margin:0 10px;width:auto!important}.MFRS-modal{padding-top:30px}
+.MFRS-dropdown-hover.MFRS-mobile .MFRS-dropdown-content,.MFRS-dropdown-click.MFRS-mobile .MFRS-dropdown-content{position:relative}	
+.MFRS-hide-small{display:none!important}.MFRS-mobile{display:block;width:100%!important}.MFRS-bar-item.MFRS-mobile,.MFRS-dropdown-hover.MFRS-mobile,.MFRS-dropdown-click.MFRS-mobile{text-align:center}
+.MFRS-dropdown-hover.MFRS-mobile,.MFRS-dropdown-hover.MFRS-mobile .MFRS-btn,.MFRS-dropdown-hover.MFRS-mobile .MFRS-button,.MFRS-dropdown-click.MFRS-mobile,.MFRS-dropdown-click.MFRS-mobile .MFRS-btn,.MFRS-dropdown-click.MFRS-mobile .MFRS-button{width:100%}}
+@media (max-width:768px){.MFRS-modal-content{width:500px}.MFRS-modal{padding-top:50px}}
+@media (min-width:993px){.MFRS-modal-content{width:900px}.MFRS-hide-large{display:none!important}.MFRS-sidebar.MFRS-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.MFRS-hide-medium{display:none!important}}
+@media (max-width:992px){.MFRS-sidebar.MFRS-collapse{display:none}.MFRS-main{margin-left:0!important;margin-right:0!important}.MFRS-auto{max-width:100%}}
+.MFRS-top,.MFRS-bottom{position:fixed;width:100%;z-index:1}.MFRS-top{top:0}.MFRS-bottom{bottom:0}
+.MFRS-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.MFRS-display-topleft{position:absolute;left:0;top:0}.MFRS-display-topright{position:absolute;right:0;top:0}
+.MFRS-display-bottomleft{position:absolute;left:0;bottom:0}.MFRS-display-bottomright{position:absolute;right:0;bottom:0}
+.MFRS-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.MFRS-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.MFRS-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.MFRS-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.MFRS-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.MFRS-display-container:hover .MFRS-display-hover{display:block}.MFRS-display-container:hover span.MFRS-display-hover{display:inline-block}.MFRS-display-hover{display:none}
+.MFRS-display-position{position:absolute}
+.MFRS-circle{border-radius:50%}
+.MFRS-round-small{border-radius:2px}.MFRS-round,.MFRS-round-medium{border-radius:4px}.MFRS-round-large{border-radius:8px}.MFRS-round-xlarge{border-radius:16px}.MFRS-round-xxlarge{border-radius:32px}
+.MFRS-row-padding,.MFRS-row-padding>.MFRS-half,.MFRS-row-padding>.MFRS-third,.MFRS-row-padding>.MFRS-twothird,.MFRS-row-padding>.MFRS-threequarter,.MFRS-row-padding>.MFRS-quarter,.MFRS-row-padding>.MFRS-col{padding:0 8px}
+.MFRS-container,.MFRS-panel{padding:0.01em 16px}.MFRS-panel{margin-top:16px;margin-bottom:16px}
+.MFRS-code,.MFRS-codespan{font-family:Consolas,"courier new";font-size:16px}
+.MFRS-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.MFRS-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.MFRS-card,.MFRS-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.MFRS-card-4,.MFRS-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.MFRS-spin{animation:MFRS-spin 2s infinite linear}@keyframes MFRS-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.MFRS-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.MFRS-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.MFRS-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.MFRS-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.MFRS-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.MFRS-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.MFRS-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.MFRS-animate-input{transition:width 0.4s ease-in-out}.MFRS-animate-input:focus{width:100%!important}
+.MFRS-opacity,.MFRS-hover-opacity:hover{opacity:0.60}.MFRS-opacity-off,.MFRS-hover-opacity-off:hover{opacity:1}
+.MFRS-opacity-max{opacity:0.25}.MFRS-opacity-min{opacity:0.75}
+.MFRS-greyscale-max,.MFRS-grayscale-max,.MFRS-hover-greyscale:hover,.MFRS-hover-grayscale:hover{filter:grayscale(100%)}
+.MFRS-greyscale,.MFRS-grayscale{filter:grayscale(75%)}.MFRS-greyscale-min,.MFRS-grayscale-min{filter:grayscale(50%)}
+.MFRS-sepia{filter:sepia(75%)}.MFRS-sepia-max,.MFRS-hover-sepia:hover{filter:sepia(100%)}.MFRS-sepia-min{filter:sepia(50%)}
+.MFRS-tiny{font-size:10px!important}.MFRS-small{font-size:12px!important}.MFRS-medium{font-size:15px!important}.MFRS-large{font-size:18px!important}
+.MFRS-xlarge{font-size:24px!important}.MFRS-xxlarge{font-size:36px!important}.MFRS-xxxlarge{font-size:48px!important}.MFRS-jumbo{font-size:64px!important}
+.MFRS-left-align{text-align:left!important}.MFRS-right-align{text-align:right!important}.MFRS-justify{text-align:justify!important}.MFRS-center{text-align:center!important}
+.MFRS-border-0{border:0!important}.MFRS-border{border:1px solid #ccc!important}
+.MFRS-border-top{border-top:1px solid #ccc!important}.MFRS-border-bottom{border-bottom:1px solid #ccc!important}
+.MFRS-border-left{border-left:1px solid #ccc!important}.MFRS-border-right{border-right:1px solid #ccc!important}
+.MFRS-topbar{border-top:6px solid #ccc!important}.MFRS-bottombar{border-bottom:6px solid #ccc!important}
+.MFRS-leftbar{border-left:6px solid #ccc!important}.MFRS-rightbar{border-right:6px solid #ccc!important}
+.MFRS-section,.MFRS-code{margin-top:16px!important;margin-bottom:16px!important}
+.MFRS-margin{margin:16px!important}.MFRS-margin-top{margin-top:16px!important}.MFRS-margin-bottom{margin-bottom:16px!important}
+.MFRS-margin-left{margin-left:16px!important}.MFRS-margin-right{margin-right:16px!important}
+.MFRS-padding-small{padding:4px 8px!important}.MFRS-padding{padding:8px 16px!important}.MFRS-padding-large{padding:12px 24px!important}
+.MFRS-padding-16{padding-top:16px!important;padding-bottom:16px!important}.MFRS-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.MFRS-padding-32{padding-top:32px!important;padding-bottom:32px!important}.MFRS-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.MFRS-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.MFRS-padding-top-64{padding-top:64px!important}.MFRS-padding-top-48{padding-top:48px!important}
+.MFRS-padding-top-32{padding-top:32px!important}.MFRS-padding-top-24{padding-top:24px!important}
+.MFRS-left{float:left!important}.MFRS-right{float:right!important}
+.MFRS-button:hover{color:#000!important;background-color:#ccc!important}
+.MFRS-transparent,.MFRS-hover-none:hover{background-color:transparent!important}
+.MFRS-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.MFRS-amber,.MFRS-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.MFRS-aqua,.MFRS-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.MFRS-blue,.MFRS-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.MFRS-light-blue,.MFRS-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.MFRS-brown,.MFRS-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.MFRS-cyan,.MFRS-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.MFRS-blue-grey,.MFRS-hover-blue-grey:hover,.MFRS-blue-gray,.MFRS-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.MFRS-green,.MFRS-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.MFRS-light-green,.MFRS-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.MFRS-indigo,.MFRS-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.MFRS-khaki,.MFRS-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.MFRS-lime,.MFRS-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.MFRS-orange,.MFRS-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.MFRS-deep-orange,.MFRS-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.MFRS-pink,.MFRS-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.MFRS-purple,.MFRS-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.MFRS-deep-purple,.MFRS-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.MFRS-red,.MFRS-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.MFRS-sand,.MFRS-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.MFRS-teal,.MFRS-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.MFRS-yellow,.MFRS-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.MFRS-white,.MFRS-hover-white:hover{color:#000!important;background-color:#fff!important}
+.MFRS-black,.MFRS-hover-black:hover{color:#fff!important;background-color:#000!important}
+.MFRS-grey,.MFRS-hover-grey:hover,.MFRS-gray,.MFRS-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.MFRS-light-grey,.MFRS-hover-light-grey:hover,.MFRS-light-gray,.MFRS-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.MFRS-dark-grey,.MFRS-hover-dark-grey:hover,.MFRS-dark-gray,.MFRS-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.MFRS-pale-red,.MFRS-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.MFRS-pale-green,.MFRS-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.MFRS-pale-yellow,.MFRS-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.MFRS-pale-blue,.MFRS-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.MFRS-text-amber,.MFRS-hover-text-amber:hover{color:#ffc107!important}
+.MFRS-text-aqua,.MFRS-hover-text-aqua:hover{color:#00ffff!important}
+.MFRS-text-blue,.MFRS-hover-text-blue:hover{color:#2196F3!important}
+.MFRS-text-light-blue,.MFRS-hover-text-light-blue:hover{color:#87CEEB!important}
+.MFRS-text-brown,.MFRS-hover-text-brown:hover{color:#795548!important}
+.MFRS-text-cyan,.MFRS-hover-text-cyan:hover{color:#00bcd4!important}
+.MFRS-text-blue-grey,.MFRS-hover-text-blue-grey:hover,.MFRS-text-blue-gray,.MFRS-hover-text-blue-gray:hover{color:#607d8b!important}
+.MFRS-text-green,.MFRS-hover-text-green:hover{color:#4CAF50!important}
+.MFRS-text-light-green,.MFRS-hover-text-light-green:hover{color:#8bc34a!important}
+.MFRS-text-indigo,.MFRS-hover-text-indigo:hover{color:#3f51b5!important}
+.MFRS-text-khaki,.MFRS-hover-text-khaki:hover{color:#b4aa50!important}
+.MFRS-text-lime,.MFRS-hover-text-lime:hover{color:#cddc39!important}
+.MFRS-text-orange,.MFRS-hover-text-orange:hover{color:#ff9800!important}
+.MFRS-text-deep-orange,.MFRS-hover-text-deep-orange:hover{color:#ff5722!important}
+.MFRS-text-pink,.MFRS-hover-text-pink:hover{color:#e91e63!important}
+.MFRS-text-purple,.MFRS-hover-text-purple:hover{color:#9c27b0!important}
+.MFRS-text-deep-purple,.MFRS-hover-text-deep-purple:hover{color:#673ab7!important}
+.MFRS-text-red,.MFRS-hover-text-red:hover{color:#f44336!important}
+.MFRS-text-sand,.MFRS-hover-text-sand:hover{color:#fdf5e6!important}
+.MFRS-text-teal,.MFRS-hover-text-teal:hover{color:#009688!important}
+.MFRS-text-yellow,.MFRS-hover-text-yellow:hover{color:#d2be0e!important}
+.MFRS-text-white,.MFRS-hover-text-white:hover{color:#fff!important}
+.MFRS-text-black,.MFRS-hover-text-black:hover{color:#000!important}
+.MFRS-text-grey,.MFRS-hover-text-grey:hover,.MFRS-text-gray,.MFRS-hover-text-gray:hover{color:#757575!important}
+.MFRS-text-light-grey,.MFRS-hover-text-light-grey:hover,.MFRS-text-light-gray,.MFRS-hover-text-light-gray:hover{color:#f1f1f1!important}
+.MFRS-text-dark-grey,.MFRS-hover-text-dark-grey:hover,.MFRS-text-dark-gray,.MFRS-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.MFRS-border-amber,.MFRS-hover-border-amber:hover{border-color:#ffc107!important}
+.MFRS-border-aqua,.MFRS-hover-border-aqua:hover{border-color:#00ffff!important}
+.MFRS-border-blue,.MFRS-hover-border-blue:hover{border-color:#2196F3!important}
+.MFRS-border-light-blue,.MFRS-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.MFRS-border-brown,.MFRS-hover-border-brown:hover{border-color:#795548!important}
+.MFRS-border-cyan,.MFRS-hover-border-cyan:hover{border-color:#00bcd4!important}
+.MFRS-border-blue-grey,.MFRS-hover-border-blue-grey:hover,.MFRS-border-blue-gray,.MFRS-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.MFRS-border-green,.MFRS-hover-border-green:hover{border-color:#4CAF50!important}
+.MFRS-border-light-green,.MFRS-hover-border-light-green:hover{border-color:#8bc34a!important}
+.MFRS-border-indigo,.MFRS-hover-border-indigo:hover{border-color:#3f51b5!important}
+.MFRS-border-khaki,.MFRS-hover-border-khaki:hover{border-color:#f0e68c!important}
+.MFRS-border-lime,.MFRS-hover-border-lime:hover{border-color:#cddc39!important}
+.MFRS-border-orange,.MFRS-hover-border-orange:hover{border-color:#ff9800!important}
+.MFRS-border-deep-orange,.MFRS-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.MFRS-border-pink,.MFRS-hover-border-pink:hover{border-color:#e91e63!important}
+.MFRS-border-purple,.MFRS-hover-border-purple:hover{border-color:#9c27b0!important}
+.MFRS-border-deep-purple,.MFRS-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.MFRS-border-red,.MFRS-hover-border-red:hover{border-color:#f44336!important}
+.MFRS-border-sand,.MFRS-hover-border-sand:hover{border-color:#fdf5e6!important}
+.MFRS-border-teal,.MFRS-hover-border-teal:hover{border-color:#009688!important}
+.MFRS-border-yellow,.MFRS-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.MFRS-border-white,.MFRS-hover-border-white:hover{border-color:#fff!important}
+.MFRS-border-black,.MFRS-hover-border-black:hover{border-color:#000!important}
+.MFRS-border-grey,.MFRS-hover-border-grey:hover,.MFRS-border-gray,.MFRS-hover-border-gray:hover{border-color:#9e9e9e!important}
+.MFRS-border-light-grey,.MFRS-hover-border-light-grey:hover,.MFRS-border-light-gray,.MFRS-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.MFRS-border-dark-grey,.MFRS-hover-border-dark-grey:hover,.MFRS-border-dark-gray,.MFRS-hover-border-dark-gray:hover{border-color:#616161!important}
+.MFRS-border-pale-red,.MFRS-hover-border-pale-red:hover{border-color:#ffe7e7!important}.MFRS-border-pale-green,.MFRS-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.MFRS-border-pale-yellow,.MFRS-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.MFRS-border-pale-blue,.MFRS-hover-border-pale-blue:hover{border-color:#e7ffff!important}
